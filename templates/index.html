@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holland Agritech</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+<link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png'%}">
+<link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/apple-touch-icon-72x72.png'%}">
+<link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/apple-touch-icon-114x114.png'%}">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="{% static 'css/bootstrap.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome/css/font-awesome.css'%}">
+
+<!-- Slider
+    ================================================== -->
+<link href="{% static 'css/owl.carousel.css'%}" rel="stylesheet" media="screen">
+<link href="{% static 'css/owl.theme.css'%}" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/nivo-lightbox/nivo-lightbox.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/nivo-lightbox/default.css'%}">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand page-scroll" href="#page-top"><img itemprop="logo" src="{% static 'img/Holland Logo.png'%}" alt="logo" class="colored-logo" style="width:100px;margin-top:-10px;"></a> </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about" class="page-scroll">About</a></li>
+        <li><a href="#services" class="page-scroll">Services</a></li>
+        <li><a href="#portfolio" class="page-scroll">Gallery</a></li>
+        <li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
+        <li><a href="#contact" class="page-scroll">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- Header -->
+<header id="header">
+
+  <div class="intro">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12  intro-text">
+            <h1>Imagine Farming - Imagine US</h1>
+            <p>Making micro Irrigation convienent & accesible<br>
+            to everyone for everyone at affordable cost.</p>
+            <a href="#about" class="btn btn-custom btn-lg page-scroll">More Info</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <h2>Welcome to <span>Holland Agritech</span></h2>
+          <hr>
+          <p>Established with the core concept of making micro irrigation accesible to everyone.Holland Agritech aim to pioneer of providing Micro Irrigation solution at ease and to reach every field at fair cost.</p>
+          <p>Our company equipped with experts from each field of farming to provide the best and convienent solution for everyone.</p>
+          <p>We aim to achieve the full potential of farmer field for best yield of his land for better crop,for better future.</P>
+          <a href="{% url 'about' %}" class="btn btn-custom btn-lg page-scroll">About Us</a> </div>
+      </div>
+
+      <div class="col-xs-12 col-md-3">
+        <div class="about-media"> <img src="{% static 'img/sprinkler irrigation.png'%}" alt=" "> </div>
+        <div class="about-desc">
+          <h3>Sprinkler Irrigation</h3>
+          <p>Sprinkler irrigation is a method of applying irrigation water which is similar to natural rainfall. Water is distributed through a system of pipes usually by pumping. It is then sprayed into the air through sprinklers so that it breaks up into small water drops which fall to the ground.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-3">
+        <div class="about-media"> <img src="{% static 'img/Drip Irrigation.png'%}" alt=" "> </div>
+        <div class="about-desc">
+          <h3>Drip Irrigation</h3>
+          <p>Drip Irrigation is the most efficient water and nutrient delivery system for growing crops. It delivers water and nutrients directly to the plant’s root zone, in the right amounts, at the right time, so each plant gets exactly what it needs, when it needs it, to grow optimally.</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-text">
+      <h3><span>Because we know what is best there could be..</span></h3>
+      <h4>To achieve the best results, you need the best team you can find. With our profound agricultural expertise, advanced engineering capabilities, and superior execution, you can be sure that with Holland Agritech, you’re in the right hands.</h4>
+    </div>
+  </div>
+</div>
+<!-- Services Section -->
+<div id="services">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 section-title text-center">
+      <h2>Our Services</h2>
+      <hr>
+      <p>With our precision irrigation changes the economics of agriculture.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="{% static 'img/services/Plantation.jpg'%}" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Plantation</h3>
+          <p>A plantation is an agricultural estate, generally centered on a plantation house, meant for farming that specializes in cash crops, usually mainly planted with a single crop, with perhaps ancillary areas for vegetables for eating and so on.</p>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="{% static 'img/services/water-sprinkler.jpg'%}" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Sprinkler Irrigation</h3>
+          <p>Sprinkler irrigation is a method of applying irrigation water which is similar to natural rainfall. Water is distributed through a system of pipes usually by pumping. It is then sprayed into the air through sprinklers so that it breaks up into small water drops which fall to the ground.</p>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="{% static 'img/services/drip-service.jpg'%}" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Drip Irrigation</h3>
+          <p>Drip Irrigation is the most efficient water and nutrient delivery system for growing crops. It delivers water and nutrients directly to the plant’s root zone, in the right amounts, at the right time, so each plant gets exactly what it needs, when it needs it, to grow optimally.</p>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="{% static 'img/services/service-polyhouse.png'%}" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Polyhouse & Shednet</h3>
+          <p>Polyhouse is a type of greenhouse where specialized polythene sheet is used as a covering material under which the crops can be grown in partially or fully controlled climatic conditions. Traditionally, the greenhouses were constructed on wooden frames where the glass was used as a cladding material</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gallery Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Agriculture Insight</h2>
+      <hr>
+      <p>Grow higher, better yields every season with continually increasing crop knowledge – no matter your crop, climate patterns, soil type or topography.</p>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".vegetable">Vegetable</a></li>
+            <li><a href="#" data-filter=".crop">Crop</a></li>
+            <li><a href="#" data-filter=".planting">Planting</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-4 planting">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/01-large.jpg'%}" title="Sugarcane" data-lightbox-gallery="gallery1" onclick="alert('Hello');">
+              <div class="hover-text">
+                <h4>Sugarcane</h4>
+              </div>
+              <img src="{% static 'img/portfolio/sugarcane gallary small.jpeg'%}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 planting">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/banana-small.jpeg'%}" title="Banana" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Banana</h4>
+              </div>
+              <img src="{% static 'img/portfolio/banana-small.jpeg'%}" class="img-responsive" alt="Banana"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 planting">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/03-large.jpg'%}" title="Mango" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Mango</h4>
+              </div>
+              <img src="{% static 'img/portfolio/mango-small.jpg'%}" class="img-responsive" alt="Mango"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 vegetable">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a  href ="{% url 'crops' %}"title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Tomato</h4>
+              </div>
+              <img src="{% static 'img/portfolio/cherry-tomato-small.jpg'%}" class="img-responsive" alt="Tomato"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 planting">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/05-large.jpg'%}" title="Cotton" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Cotton</h4>
+              </div>
+              <img src="{% static 'img/portfolio/cotton-small.jpg'%}" class="img-responsive" alt="Cotton"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 crop">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/06-large.jpg'%}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Hemp</h4>
+              </div>
+              <img src="{% static 'img/portfolio/hemp-small.jpg'%}" class="img-responsive" alt="Hemp"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 crop">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/07-large.jpg'%}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Tea</h4>
+              </div>
+              <img src="{% static 'img/portfolio/tea-small.jpg'%}" class="img-responsive" alt="Tea"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 vegetable">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/08-large.jpg'%}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>vegetables</h4>
+              </div>
+              <img src="{% static 'img/portfolio/vegetable-small.jpg'%}" class="img-responsive" alt="vegetables"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 crop">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/09-large.jpg'%}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Corn</h4>
+              </div>
+              <img src="{% static 'img/portfolio/corn-small.jpg'%}" class="img-responsive" alt="Corn"> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Testimonials Section -->
+<div id="testimonials" class="text-center">
+  <div class="overlay">
+    <div class="container">
+      <div class="section-title">
+        <h2>Testimonials</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div id="testimonial" class="owl-carousel owl-theme">
+            <div class="item">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
+              <p>- John DOE, Parker County, TX</p>
+            </div>
+            <div class="item">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
+              <p>- Jenny DOE, Parker County, TX</p>
+            </div>
+            <div class="item">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
+              <p>- John DOE, Parker County, TX</p>
+            </div>
+            <div class="item">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
+              <p>- John DOE, Parker County, TX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Contact Us</h2>
+      <hr>
+      <p>Get in touch</p>
+    </div>
+    <div class="col-md-10 col-md-offset-1 contact-info">
+      <div class="col-md-4">
+        <h3>Address</h3>
+        <hr>
+        <div class="contact-item">
+          <p>301,First floor Dynamic Center,Zone-1</p>
+          <p>Bhopal, M.P 462001</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>Working Hours</h3>
+        <hr>
+        <div class="contact-item">
+          <p>Monday-Saturday: 07:00 - 18:00</p>
+          <p>Sunday: CLOSED</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>Contact Info</h3>
+        <hr>
+        <div class="contact-item">
+          <p>Phone: +91-9425069241</p>
+          <p>Email: #</p>
+          <p>Phone: +91-7869159999</p>
+          <p>Email: #</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <h3>Leave us a message</h3>
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Footer Section -->
+<div id="footer">
+  <div class="container text-center">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      <p>&copy; 2021 Holland Agritech Industries Designed by <a href="#" rel="nofollow">Rohit Tiwari</a></p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="{% static 'js/jquery.1.11.1.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/SmoothScroll.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/nivo-lightbox.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.isotope.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/owl.carousel.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/jqBootstrapValidation.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/contact_me.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+</body>
+</html>
