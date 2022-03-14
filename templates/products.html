@@ -38,10 +38,33 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<style>
+  ul.a{
+    list-style-type: circle;
+  }
+  li{
+    color:blue;
+  }
+
+  .products{
+    border-styles:solid 3px black;
+  }
+
+  .pro{
+    margin:2%;
+    background-color:white;
+
+  }
+
+
+
+</style>
+
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
     ==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color:grey;">
+<nav id="menu" class="navbar navbar-default navbar-fixed-top " style="background-color:#333;">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -51,11 +74,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{% url 'about' %}" class="page-scroll">About</a></li>
+        <li><a href="#0" class="page-scroll">About</a></li>
         <li><a href="#services" class="page-scroll">Services</a></li>
         <li><a href="#portfolio" class="page-scroll">Gallery</a></li>
         <li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
-        <li><a href="#testimonials" class="page-scroll">Products</a></li>
+        <li><a href="#about" class="page-scroll">Product</a></li>
         <li><a href="#contact" class="page-scroll">Contact</a></li>
       </ul>
     </div>
@@ -63,56 +86,101 @@
   </div>
   <!-- /.container-fluid -->
 </nav>
-<header id='header'>
 
-<div class="container" style="margin-top:;" id='about'>
-  <div class="row">
-    <div class="col-xs-8">
-      <div class="about-text">
-
-        {% for inf in info %}
-              <h2>Why micro irrigation for <span style="color:">{{inf.name}} </span>?</h2>
-              <ul>
-                <li><h3>{{inf.about}}</h3></li>
-              </ul>
+<header id="header">
 
 
+</header>
+<div id="services" style="margin-top:10%; padding:0;">
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-6">
+        <div class="" style="padding-top:20%">
+          <h2>Change the way you<br>irriagte for better farming,<br>better tomorrow</h2>
+          <hr>
+          <p>With our precision irrigation products chnages the farming</p>
+        </div>
+
+      </div>
+      <div class="col-md-6 " >
+          <div class="about-media pro"> <img src="{% static 'Products/irrigate product holland.jpeg'%}" alt=" " width="100%"> </div>
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+    <div id="about">
+      <div class="container">
+        <div class="row pro">
+
+        <div class="col-md-4 " >
+            <div class="about-media pro"> <img src="{% static 'Products/D-Net sprinkler holland.png'%}" alt=" "> </div>
+
+          </div>
+
+          <div class="col-md-8 ">
+              <h3>D-Net</h3>
+              <p>For field crops and vegetable growers looking to achieve excellent crop uniformity with large and varied spacing above 10 meters, D-Net™ 3D-arm impact sprinklers offer maximum water-use efficiency.  </p>
+              <p>D-Net™ 1/2" impact sprinklers, with 3D diffusion arm, guarantees excellent crop uniformity for field crops and vegetables irrigation, with sprinkler spacing up to 12x13 meters. Precise and water-efficient distribution also offers an ideal solution for crop germination and orchard cooling.</p>
+              <!-- <ul class="a">
+                <li></li>
+              </ul> -->
+            </div>
+
+
+        </div>
+
+    <div class="row pro">
+      <div class="col-md-4 " >
+          <div class="about-media prod"> <img src="{% static 'Products/micro sprinkler holland.jpeg'%}" alt=" "> </div>
+
+        </div>
+
+        <div class="col-md-8 ">
+            <h3>Micro Sprinkler AS-211</h3>
+            <p>Low-volume irrigation, delivers water directly to the root zone of the plant. There are many parts to a typical drip system, but a Micro irrigation system offers users the most value, including better control and water savings. For subsurface drip irrigation, Hunter’s Eco-Wrap and Eco-Mat provide unmatchable distribution uniformity in a world where conserving water is of the highest value.
+
+  </p>
+            <p></p>
+            <!-- <ul class="a">
+              <li></li>
+            </ul> -->
+          </div>
+    </div>
+
+
+    <div class="row pro">
+      <div class="col-md-4 " >
+          <div class="about-media prod"> <img src="{% static 'Products/drip latral holland.jpeg'%}" alt=" "> </div>
+
+        </div>
+
+        <div class="col-md-8 ">
+            <h3>Drip Inline</h3>
+            <p>The Drip integral PC drip line delivers ultra-reliable uniformity in subsurface drip irrigation (SDI), even in complex topographies thanks to its pressure compensating mechanism and Anti-Siphon mechanism that prevents dirt suction.
+
+The Anti-Siphon mechanism blocks external contaminants from being drawn into the dripper, making it a great solution for buried drip lines (SDI).</p>
+            <p></p>
+            <!-- <ul class="a">
+              <li></li>
+            </ul> -->
+          </div>
+    </div>
 
       </div>
     </div>
-    <div class="col-xs-4">
-      <div class="about-media"> <img src="/media/{{inf.image}}" alt=" "> </div>
-    </div>
-    {% endfor %}
+
   </div>
 
-  <div class="row">
-    <div class="col-xs-4">
-        {% for inf in info %}
-      <div class="about-media">
-        <img src="/media/{{inf.image}}" alt=" ">
-      </div>
-      {% endfor %}
-    </div>
-    <div class="col-xs-8">
 
-      <div class="about-text">
-
-        {% for inf in info %}
-              <h2>Why micro irrigation for <span style="color:">{{inf.name}} </span>?</h2>
-              <ul>
-                <li><h3>{{inf.about}}</h3></li>
-              </ul>
-
-
-
-      </div>
-    </div>
-
-    {% endfor %}
-  </div>
-</div>
 </body>
+
+
+</html>
+
 
 <script type="text/javascript" src="{% static 'js/jquery.1.11.1.js'%}"></script>
 <script type="text/javascript" src="{% static 'js/bootstrap.js'%}"></script>
@@ -123,4 +191,3 @@
 <script type="text/javascript" src="{% static 'js/jqBootstrapValidation.js'%}"></script>
 <script type="text/javascript" src="{% static 'js/contact_me.js'%}"></script>
 <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
-</html>

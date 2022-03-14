@@ -40,3 +40,7 @@ def crops(request):
 
 def about(request):
     return render(request,'aboutus.html')
+
+
+def products(request):
+    return render(request,'products.html')
