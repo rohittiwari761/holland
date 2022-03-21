@@ -5,3 +5,4 @@ from .models import *
 admin.site.register(Crop)
 admin.site.register(dealer)
 admin.site.register(farmer_detail)
+admin.site.register(survey)

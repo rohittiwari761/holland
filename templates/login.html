@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container" style="padding:30%; background-color:grey;">
+    <form action="{% url 'survey' %}"  method="post">
+      {% csrf_token %}
+      <input type="number" name='username' minlength=6> <br>
+      <input type="password" name='password' minlength=2>
+      <button type="submit" name="button"> Log In</button>
+    </form>
+
+    <P style="color:red">{{error}}</P>
+  </div>
+</body>
+</html>

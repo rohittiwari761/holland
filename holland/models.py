@@ -38,3 +38,23 @@ class farmer_detail(models.Model):
 
     def __str__(self):
         return f"{self.farmer_dealer_code} {self.name}"
+
+
+class survey(models.Model):
+    code=models.TextField(max_length=20)
+    name=models.TextField(max_length=20)
+    namep=models.TextField(max_length=20)
+    regd=models.IntegerField()
+    number=models.IntegerField()
+    system=models.TextField(max_length=20)
+    spacing=models.TextField(max_length=20)
+    crop=models.TextField(max_length=20)
+    pump=models.TextField(max_length=20)
+    area=models.TextField(max_length=20)
+    type=models.TextField(max_length=20)
+
+    def __str__(self):
+        return f'{self.code} {self.name}'
+
+
+        

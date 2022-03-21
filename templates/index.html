@@ -180,7 +180,7 @@
       <div class="portfolio-items">
         <div class="col-sm-6 col-md-4 planting">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="{% static 'img/portfolio/01-large.jpg'%}" title="Sugarcane" data-lightbox-gallery="gallery1" onclick="alert('Hello');">
+            <div class="hover-bg"> <a href="{% url 'crops' 'Sugarcane' %}" title="Sugarcane" data-lightbox-gallery="gallery1" >
               <div class="hover-text">
                 <h4>Sugarcane</h4>
               </div>
@@ -207,7 +207,7 @@
         </div>
         <div class="col-sm-6 col-md-4 vegetable">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a  href ="{% url 'crops' %}"title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a  href ="{% url 'crops' 'Tomato' %}"title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Tomato</h4>
               </div>
